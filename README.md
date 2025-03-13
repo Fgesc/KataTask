@@ -1,1 +1,1 @@
-https://github.com/Fgesc/KataTask.git
+[Посмотреть проект на GitHub Pages](https://Fgesc.github.io/KataTask/)
