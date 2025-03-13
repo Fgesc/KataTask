@@ -1,0 +1,51 @@
+
+/* Позицианирование блоков и элементов */
+.about-us_display_flex {
+    display: flex;
+    gap:42px;
+    }
+.about-us__description_display_flex {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    } 
+.about-us__link_display_flex {
+    display: flex;
+    align-items:center;
+    gap:16px;
+    }
+/* Оформление */
+.about-us__reviews-title_style {
+font-family: "Roboto";
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color:rgba(126, 126, 130, 1);
+    }
+.about-us__reviews-title_wide {
+    margin:0;
+    padding:0;
+    }
+.about-us__info_style {
+font-family: "Roboto";
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: rgba(27, 28, 33, 1);
+    }
+.about-us__info_wide {
+    margin:0;
+    padding:0;
+    }
+.about-us__link-title_style {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(27, 28, 33, 1);
+    
+    }
+ .about-us__link-title_wide {
+    margin:0;
+    padding:0;
+    }

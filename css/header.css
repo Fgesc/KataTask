@@ -1,0 +1,73 @@
+/* Хедер блок */
+.header{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: antiquewhite;
+    }
+/* Позиционирование Блока (Крупных элементов сетки) */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+.navbar__left-side {
+    display:flex;
+    align-items: center;
+    gap:16px;
+    }
+.navbar__right-side {
+    display:flex;
+    align-items: center;
+    gap:42px;
+    }
+.contact-list_display_flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    }
+.contact-list__link_display_flex {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    }
+/* Оформление блока */
+.navbar__button_wide {
+    box-sizing: border-box;
+    width:40px;
+    height:40px;
+    padding:12px 11px;
+    border-radius:50%;
+    }
+.navbar__button_style {
+    background: rgba(255, 62, 121, 1);
+    }
+.navbar__logo_wide {
+    width:96px;
+    height: 50px;
+    }  
+.contact-list_style {
+    list-style: none;
+    margin:0;
+    padding:0;
+    }  
+.contack-list__link_style {
+    color: rgba(27, 28, 33, 1);
+    text-decoration: none;
+    }
+.contact-list__check_wide {
+    margin:0;
+    }   
+.contact-list__image_wide {
+    box-sizing: border-box;
+    width:40px;
+    height:40px;
+    padding:10px 10px;
+    border-radius:50%; 
+    }   
+.contact-list__image_style {
+    background: rgba(255, 62, 121, 1);
+    } 
+    

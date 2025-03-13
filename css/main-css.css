@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+body{
+    margin:0;  
+}
+/* Блок header */
+    .header{
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: white;
+    }
+    /* Позиционирование Блока (Крупных элементов сетки) */
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .navbar__left-side {
+        display:flex;
+        align-items: center;
+        gap:16px;
+    }
+    .navbar__right-side {
+        display:flex;
+        align-items: center;
+        gap:42px;
+    }
+    .contact-list_display_flex {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .contact-list__link_display_flex {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+    /* Оформление блока */
+    .navbar__button_style {
+    background: rgba(255, 62, 121, 1);
+    }  
+    .navbar__button_wide {
+        box-sizing: border-box;
+        width:40px;
+        height:40px;
+        padding:12px 11px;
+        border-radius:50%;
+    }
+    .navbar__logo_wide {
+        width:96px;
+        height: 50px;
+    }  
+    .contact-list_style {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }  
+    .contack-list__link_style {
+        color: rgba(27, 28, 33, 1);
+        text-decoration: none;
+    }
+    .contact-list__check_wide {
+        margin:0;
+    }  
+    .contact-list__image_style {
+    background: rgba(255, 62, 121, 1);
+    } 
+    .contact-list__image_wide {
+        box-sizing: border-box;
+        width:40px;
+        height:40px;
+        padding:10px 10px;
+        border-radius:50%; 
+    }   
+
+    .page {
+        background-color: rgba(248, 248, 248, 1);
+    }
+/* Блок catalog */
+    .catalog__list_display_flex {
+        display: flex;
+        flex-wrap:nowrap;
+    }
+    .catalog__title_style {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: rgba(27, 28, 33, 1);
+    }
+    .catalog__title_wide {
+        margin:0;
+        padding-left: 12px;
+        border-left: 4px solid  rgba(65, 246, 215, 1);
+        margin-bottom: 30px;
+    } 
+    .catalog__list_style {
+    list-style: none;
+    }
+    .catalog__list_wide {
+        margin:0;
+        padding:0;
+        overflow-x: scroll;
+    } 
+    .catalog__item_wide {
+        padding: 8px 16px;
+        flex-shrink: 0;
+    }
+    .catalog__item_style {
+    font-family:"Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(126, 126, 130, 1);
+    
+    }
+    .catalog__item_active {
+        border: 2px solid rgba(184, 255, 236, 1); 
+        border-radius:6px;
+    }
+
+/* Блок about_us */
+/* Позицианирование блоков и элементов */
+.about-us_display_flex {
+    display: flex;
+    gap:42px;
+    }
+.about-us__description_display_flex {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    } 
+.about-us__link_display_flex {
+    display: flex;
+    align-items:center;
+    gap:16px;
+    }
+/* Оформление */
+.about-us__reviews-title_style {
+font-family: "Roboto";
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color:rgba(126, 126, 130, 1);
+    }
+.about-us__reviews-title_wide {
+    margin:0;
+    padding:0;
+    }
+.about-us__info_style {
+font-family: "Roboto";
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: rgba(27, 28, 33, 1);
+    }
+.about-us__info_wide {
+    margin:0;
+    padding:0;
+    }
+.about-us__link-title_style {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(27, 28, 33, 1);
+    
+    }
+ .about-us__link-title_wide {
+    margin:0;
+    padding:0;
+    }
+
+@media screen and (max-width: 320px) {
+    .contact-list_hidden {
+       display: none;
+    }
+    .contact-list__check_hidden {
+        display: none;
+    }
+    .about-us__reviews-title_hidden {
+        display: none;
+    }
+    .about-us__info_hidden{
+        display: none;
+    }
+    .header_size_s {
+        box-sizing: border-box;
+        padding: 18px 16px;
+    }
+    .navbar__right-side_style_s {
+        box-sizing: border-box;
+        padding-left:20px;
+        border-left:2px solid rgba(234, 234, 234, 1);
+        border-radius:1px;
+    }
+    .catalog_size_s {
+        padding:24px 0;
+    }
+    .catalog__list_size_s {
+        margin-left:16px;
+    }
+    .about-us__description_size_s {
+        box-sizing: border-box;
+        padding:0 16px;
+    }
+    .about-us_display_flex_wrap{
+        flex-wrap: wrap;
+        gap:10px;
+    }  
+    .about-us__promo-image_wide_s {
+        width:320px;
+        height:auto;
+        padding-bottom:50px;
+    }
+    }
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+    .contact-list__check_hidden {
+        display: none;
+    }
+    .about-us__reviews-title_hidden {
+        display: none;
+    }
+    .header_size_m {
+        box-sizing: border-box;
+        padding: 18px 24px;
+    }
+    .catalog_size_m {
+        padding:24px 0 32px 0;
+    }
+    .catalog__list_size_m {
+        margin-left:24px;
+    }
+    .about-us__description_size_m {
+        box-sizing: border-box;
+        padding:0 24px;
+    }
+    .navbar__logo_style_m {
+        box-sizing: border-box;
+        border-left:2px solid rgba(234, 234, 234, 1);
+        border-radius:1px;  
+        padding-left: 20px;  
+    }
+    .about-us__promo-image_wide_m {
+        width:360px;
+        height:auto;
+        padding-bottom:50px;
+    }
+    .about-us__info_size_m{
+            height:40px;
+            overflow-x: hidden;
+        } 
+    .contact-list_style_m {
+        box-sizing: border-box;
+        padding-left:20px;
+        border-left:2px solid rgba(234, 234, 234, 1);
+        border-radius:1px;
+        }
+    } 
+ @media screen and (min-width: 769px) and (max-width: 1120px) {
+    .navbar__left-side_hidden {
+        display: none;
+    }
+    .contact-list_hidden {
+        display: none;
+     }
+    .navbar_position_l {
+        position: relative;
+        top: 40px;
+        right:32px;
+     }
+     .navbar_style_l {
+        justify-content: flex-end;
+     }
+    .header_style_l {
+        background-color: rgba(248, 248, 248, 1);
+    }
+    .catalog_size_l {
+        padding-bottom:10px;
+    }
+    .catalog__list_size_l {
+        margin-left:32px;
+    }
+    .about-us_size_l {
+        box-sizing: border-box;
+        padding:0 28px 0 32px;
+    }
+    .about-us__promo-image_wide_l {
+        width:531px;
+        height:auto;
+        padding-bottom:50px;
+    }
+    }
