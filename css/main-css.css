@@ -1,16 +1,11 @@
-@font-face {
-    font-family: 'TT Lakes';
-    src: url('/fonts/TTLakes-Italic.eot');
-    src: local('TTLakes-Italic'),
-        url('/fonts/TTLakes-Italic.ttf') format('truetype'), 
-        url('/fonts/TTLakes-Italic.woff') format('woff');
-}
+
 body{
     margin:0;  
+    font-family: "TT Lakes";
+    color: rgba(27, 28, 33, 1);
 }
 /* Блок header */
     .header{
-    font-family: "TT Lakes";
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -27,7 +22,7 @@ body{
     .navbar__left-side {
         display:flex;
         align-items: center;
-        gap:16px;
+        gap:16.73px;
     }
     .navbar__right-side {
         display:flex;
@@ -56,8 +51,8 @@ body{
         border-radius:50%;
     }
     .navbar__logo_wide {
-        width:96px;
-        height: 50px;
+        width:96.55px;
+        height: 50.81px;
     }  
     .contact-list_style {
         list-style: none;
@@ -65,12 +60,14 @@ body{
         padding:0;
     }  
     .contack-list__link_style {
-        color: rgba(27, 28, 33, 1);
         text-decoration: none;
     }
     .contact-list__check_wide {
         margin:0;
     }  
+    .contact-list__check_style {
+        color: rgba(27, 28, 33, 1);;
+    }
     .contact-list__image_style {
     background: rgba(255, 62, 121, 1);
     } 
@@ -91,11 +88,10 @@ body{
         flex-wrap:nowrap;
     }
     .catalog__title_style {
-        font-family: "TT Lakes";
         font-weight: 700;
         font-size: 28px;
         line-height: 40px;
-        color: rgba(27, 28, 33, 1);
+        letter-spacing: -0.6px;
     }
     .catalog__title_wide {
         margin:0;
@@ -116,7 +112,6 @@ body{
         flex-shrink: 0;
     }
     .catalog__item_style {
-    font-family:"TT Lakes";
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -154,16 +149,16 @@ line-height: 24px;
 color:rgba(126, 126, 130, 1);
     }
 .about-us__reviews-title_wide {
+    width:71px;
+    height:24px;
     margin:0;
     padding:0;
-    padding-left:16px;
+    padding-left:0;
     }
 .about-us__info_style {
-font-family: "TT Lakes";
 font-weight: 400;
 font-size: 14px;
 line-height: 20px;
-color: rgba(27, 28, 33, 1);
 letter-spacing: 0.2px;
     }
 .about-us__info_wide {
@@ -171,13 +166,11 @@ letter-spacing: 0.2px;
     padding:0;
     }
 .about-us__link-title_style {
-    font-family: "TT Lakes";
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
-    color: rgba(27, 28, 33, 1);
-    
+    line-height: 24px;  
     }
+
 .about-us__link-image_wide {
     box-sizing: border-box;
     height:24px;
@@ -192,6 +185,7 @@ letter-spacing: 0.2px;
     }
 
 @media screen and (max-width: 320px) {
+
     .contact-list_hidden {
        display: none;
     }
@@ -206,7 +200,7 @@ letter-spacing: 0.2px;
     }
     .header_size_s {
         box-sizing: border-box;
-        padding: 18px 16px;
+        padding: 18.59px 16px;
     }
     .navbar__right-side_style_s {
         box-sizing: border-box;
@@ -221,6 +215,9 @@ letter-spacing: 0.2px;
         margin-left:16px;
     }
     .catalog__title_wide_s{
+        display: flex;
+        box-sizing: border-box;
+        width:304px;
         margin-bottom:24px;
     }
     .about-us__description_size_s {
@@ -229,7 +226,7 @@ letter-spacing: 0.2px;
     }
     .about-us_display_flex_wrap{
         flex-wrap: wrap;
-        gap:10px;
+        gap:16px;
     }  
     .about-us__info_style_s{
         line-height: 18px;
@@ -241,10 +238,13 @@ letter-spacing: 0.2px;
     .about-us__promo-image_wide_s {
         width:320px;
         height:176px;
-        margin-top:10px;
         margin-bottom:35px;
     }
+    .header__navbar_wide_s {
+        gap:16.73px;
     }
+    }
+
 @media screen and (min-width: 321px) and (max-width: 768px) {
 
     .contact-list__check_hidden {
@@ -255,11 +255,17 @@ letter-spacing: 0.2px;
     }
     .header_size_m {
         box-sizing: border-box;
-        padding: 18px 24px;
+        padding: 18.59px 24px;
+    }
+    .navbar__left-side_wide_m {
+        gap: 20px;
     }
     .catalog__title_wide_m{
         margin-bottom:32px;
         padding-left:20px;
+        display: flex;
+        box-sizing: border-box;
+        width:257px;
     }
     .catalog_size_m {
         padding:24px 0 32px 0;
@@ -270,6 +276,12 @@ letter-spacing: 0.2px;
     .about-us__description_size_m {
         width:312px;
         height:194px;
+    }
+    .about-us__description_display_flex {
+        gap:0px;
+        } 
+    .navbar__right-side_style_m {
+        gap:20px;
     }
     .navbar__logo_style_m {
         box-sizing: border-box;
@@ -282,7 +294,7 @@ letter-spacing: 0.2px;
     }
     .about-us_size_m {
         box-sizing: border-box;
-        padding:0 25px 0 24px;
+        padding:0 25px 40px 24px;
     }
     .about-us__info_wide_m {
         height: 100px;
@@ -290,10 +302,11 @@ letter-spacing: 0.2px;
     }
     .about-us__promo-image_wide_m {
         width:360px;
-        height:208;
-        padding-bottom:40px;
+        height:208px;
     }
     .about-us__info_size_m{
+            margin-top:22px;
+            margin-bottom:10px;
             height:40px;
             overflow-x:hidden;
         } 
@@ -302,9 +315,15 @@ letter-spacing: 0.2px;
         padding-left:20px;
         border-left:2px solid rgba(234, 234, 234, 1);
         border-radius:1px;
+        gap:16px;
         }
     } 
- @media screen and (min-width: 769px) and (max-width: 1120px) {
+ @media screen and (min-width: 769px){
+    body {
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .navbar__left-side_hidden {
         display: none;
     }
@@ -313,7 +332,7 @@ letter-spacing: 0.2px;
      }
     .navbar_position_l {
         position: relative;
-        top: 40px;
+        top: 42px;
         right:32px;
      }
      .navbar_style_l {
@@ -323,9 +342,12 @@ letter-spacing: 0.2px;
         background-color: rgba(248, 248, 248, 1);
     }
     .catalog_size_l {
-        padding-bottom:10px;
+        margin-bottom:49px;
     }
     .catalog__title_wide_l{
+        display: flex;
+        box-sizing: border-box;
+        width:266px;
         margin-bottom:8px;
         padding-left:28px;
     }
@@ -338,14 +360,42 @@ letter-spacing: 0.2px;
     }
     .about-us__description_size_l {
         width:490px;
-        height:194px;
+        height:238px;
     }
     .about-us_display_flex_l {
         gap:36px;
     }
     .about-us__promo-image_wide_l {
-        width:531px;
+        width:531.35px;
         height:307px;
+    }
+    .contact-list_style_l {
+        gap:32px;
+    }
+    .about-us__description_display_flex_m {
+        gap:0;
+    }
+    .about-us__reviews-title_wide_l {
+        padding-left: 22px;
+    }
+    .about-us__info_wide_l {
+        margin-top: 19.22px;
+    }
+    .about-us__info_size_l {
+        margin-top: 17px;
+    }
+    .about-us__link_wide_l {
+        margin-top: 13.78px;
+    }
+    .about-us__description_position_l {
+        position: relative;
+        top:-30px;
+    }
+    .about-us_size_l {
         padding-bottom:49px;
     }
+    }
+    @media screen and (min-width: 1121px) {
+
+        
     }
