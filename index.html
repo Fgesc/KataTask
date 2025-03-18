@@ -79,10 +79,25 @@
             </div>
             <div class="about-us__promo"><img class="about-us__promo-image about-us__promo-image_wide_s about-us__promo-image_wide_m about-us__promo-image_wide_l" src="img/promo.jpg" alt="Промо фотография"></div>
         </section> 
-
     </main>
-
-</body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let focusElements = document.querySelectorAll('.catalog__item_focus');
+            focusElements.forEach(function(element) {
+                element.addEventListener('blur', function(event) {
+                    setTimeout(function() {
+                        const hasFocus = Array.from(focusElements).some(function(focusElement) {
+                            return document.activeElement === focusElement;
+                        });
+                        if (!hasFocus) {
+                            event.target.focus();
+                        }
+                    }, 0);
+                });
+            });
+        });
+    </script>
+    </body>
 </html>
 
 

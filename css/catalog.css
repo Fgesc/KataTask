@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url('/fonts/Roboto-VariableFont_wdth\,wght.ttf') format('truetype');
-}
+
 .catalog__list_display_flex {
     display: flex;
     flex-wrap:nowrap;
